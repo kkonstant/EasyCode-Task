@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		
+	</div>
+	<div class="main">
+		 
+	</div>
+	<div class="footer">
+	 
+	</div>
+	<script>
+  
+	// =============================================
+
+	var strR ="I am the best";
+	alert(strR.split("").reverse().join(""));
+
+// ==================================================
+
+	var str = "JavaScript is a pretty good lenguage";
+	var newStr = '';
+	alert(str);
+		for(var i=0;i< str.length; i++){
+			if(str[i-1]==" "){
+				var j = str[i].toUpperCase();
+			}
+			else{ j = str[i]==" "?"":str[i];
+		}
+			newStr += j;
+		}
+	alert(newStr);
+ 
+
+	// ==============================================
+
+	var str1 = "JavaScript is a pretty good lenguage";
+	var newStr1 = '';
+	var resStr1 = '';
+	alert(str1);
+		for(var i=0;i< str1.length; i++){
+			if(str1[i-1]==" "){
+				var j = str1[i].toUpperCase();
+			}
+			else{ j = str1[i];
+			}
+			newStr1 += j;
+		}
+	resStr1 = newStr1.split(" ").join("");
+	alert(newStr1);
+	alert(resStr1);
+
+	// =================================================
+
+	var str2 = "JavaScript is a pretty good lenguage";
+	var newStr2 = '';
+	var resStr2 = '';
+	alert(str2);
+		for(var i=0;i< str2.length; i++){
+			if(str2[i-1]==" "){
+				var j = str2[i].toUpperCase();
+			}
+			else{ j = str2[i]==" "?"":str2[i];
+			}
+			newStr2 += j;
+		}
+	resStr2 = newStr2.replace(/ /g,"");
+	alert(newStr2);
+	alert(resStr2);
+ 
+
+	for(var i = 0; i<=15; i++){
+		if(i%2!==0){
+			document.write(i + '<br>');
+		}
+	}
+
+	for(var i = 1; i<=10; i++){
+		var j = i;
+		var sum = i*j;
+			document.write(j + '<br>');
+	}
+	document.write(sum + '<br>');
+
+	</script>
+</body>
+</html>
