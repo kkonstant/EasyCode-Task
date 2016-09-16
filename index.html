@@ -17,13 +17,22 @@
 	</div>
 	<script>
   
-	// =============================================
+	// 2)=============================================
 
-	var strR ="I am the best";
+	var strR ="!tseb eht ma I";
 	alert(strR.split("").reverse().join(""));
 
-// ==================================================
+// 3)==================================================
+	var f = 10;
+	var sum = 1;
+	for(var i = 1; i<=f; i++){
+		sum = sum*i;
+	}
+	document.write(sum + '<br>');
 
+	// 5)===================================================
+
+	// 1-й способ
 	var str = "JavaScript is a pretty good lenguage";
 	var newStr = '';
 	alert(str);
@@ -36,10 +45,8 @@
 			newStr += j;
 		}
 	alert(newStr);
- 
 
-	// ==============================================
-
+	// 2-й способ
 	var str1 = "JavaScript is a pretty good lenguage";
 	var newStr1 = '';
 	var resStr1 = '';
@@ -56,8 +63,7 @@
 	alert(newStr1);
 	alert(resStr1);
 
-	// =================================================
-
+	// 3-й способ
 	var str2 = "JavaScript is a pretty good lenguage";
 	var newStr2 = '';
 	var resStr2 = '';
@@ -73,20 +79,14 @@
 	resStr2 = newStr2.replace(/ /g,"");
 	alert(newStr2);
 	alert(resStr2);
- 
+
+	// 6)====================================================
 
 	for(var i = 0; i<=15; i++){
 		if(i%2!==0){
 			document.write(i + '<br>');
 		}
 	}
-
-	for(var i = 1; i<=10; i++){
-		var j = i;
-		var sum = i*j;
-			document.write(j + '<br>');
-	}
-	document.write(sum + '<br>');
 
 	</script>
 </body>
