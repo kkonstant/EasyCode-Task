@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DZ-3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script>
+
+	// 1)====================
+	function  multiply(arg) {
+		var sum = 1;
+		if(arg == undefined){
+			return res = 0;
+		}
+		for (var i = 0; i < arguments.length; i++){
+			sum *= arguments[i];
+		}
+		return sum;
+	}
+	var sum = multiply(7,9,10);
+	document.write("sum:" + " " + sum);
+  // 1-a)++++++++++++++++++++++
+	function res(a,b){
+		return a * b;
+	} 
+	document.write("<br>"+"result =" + " " +res(5,6));
+
+	// 2)=======================
+	function toComputeF(valF){
+		var resF;
+		if( valF > 1){
+			var valF = valF * toComputeF(valF - 1);
+		}
+		resF = valF; 
+		return resF; 
+	}
+	var resF = toComputeF(10);
+	document.write("<br>"+ resF);
+
+	 // 2a)+++++++++++++++++++++++++++++
+
+	function factorial(n) {
+   	return n ? n * factorial(n - 1) : 1;
+	}
+	var resF = factorial(10);
+	document.write("<br>"+ resF);
+
+	// 3)============================
+	function reverseString(str){
+		var newStr = "";
+		for (var i = str.length-1; i >=0; i--){
+			newStr += str[i];
+		}
+			return newStr; 
+	}
+	var str = reverseString("test");
+	document.write("<br>"+ str);
+
+
+	</script>
+</body>
+</html>
