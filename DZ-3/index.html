@@ -58,6 +58,17 @@
 	var str = reverseString("test");
 	document.write("<br>"+ str);
 
+	// 4)===============================
+	function getCodeStringFromText(str){
+		var newStr = "";
+		for(var i=0;i< str.length; i++){
+			newStr += str.charCodeAt(i) + " ";
+		}
+			return newStr;
+	}
+	var str = getCodeStringFromText("test");
+	document.write("<br>"+ str);
+
 
 	</script>
 </body>
