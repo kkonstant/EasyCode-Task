@@ -81,6 +81,33 @@
 	 var str = printChars("hello");
 	 document.write("<br>"+ str);
 
+	// 6)=====================================
+		var arr = ['my','name','is','Trinity'];
+		var arrInt = [10, 20, 30];
+
+		function processingArr(arr, returnArr){
+			var newString = "New value:";
+			var str = "";
+			for(var i = 0; i < arr.length; i++){
+				str += returnArr(arr[i]);
+			}
+			return newString += ' ' + str;
+		}
+
+		function callback(val){
+			return val.toUpperCase();
+		}
+
+		function callback1(val){
+			return val + '0';
+		} 
+
+		var newString = processingArr(arr, callback);
+		document.write(newString + '<br>');
+
+		var newString = processingArr(arrInt, callback1);
+		document.write(newString);
+
 
 	</script>
 </body>
